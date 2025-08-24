@@ -184,18 +184,25 @@ body {
     }
 
     .grid-container {
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
+        grid-template-columns: none !important;
+        grid-template-rows: none !important;
         margin-top: 140px;
-        gap: 10px;
-        padding: 0 10px;
+        gap: 15px;
+        padding: 0 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .tile {
         min-height: 300px;
-        width: 100%;
-        display: block;
+        width: 100% !important;
+        display: block !important;
         flex: none;
+        margin: 0;
+        float: none;
+        position: relative;
     }
 
     .tile img {
@@ -207,6 +214,10 @@ body {
 
     .tile-content {
         padding: 1.5rem;
+    }
+
+    .tile-title {
+        font-size: 1.1rem;
     }
 
     .tile-title {
