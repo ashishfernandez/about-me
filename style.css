@@ -184,18 +184,18 @@ body {
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: none;
+        display: flex;
+        flex-direction: column;
         margin-top: 140px;
-        gap: 1px;
-        min-height: auto;
+        gap: 10px;
+        padding: 0 10px;
     }
 
     .tile {
         min-height: 300px;
-        aspect-ratio: 4/3;
-        display: block;
         width: 100%;
+        display: block;
+        flex: none;
     }
 
     .tile img {
