@@ -334,7 +334,8 @@ body {
 
 /* Ensure proper aspect ratios across devices */
 /* Wide Screen Layout - 1x4 grid */
-@media (min-width: 1200px) {
+/* Wide Screen Layout - 1x4 grid */
+@media (min-width: 1600px) {
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
